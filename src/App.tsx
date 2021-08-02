@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Noun from './components/Noun'
 import Random from './components/Random';
 import Answer from './components/Answer';
+import {AiFillGithub} from 'react-icons/ai'
 
 const App: FC = () => {
 
@@ -24,6 +25,12 @@ const App: FC = () => {
           <Route path='/noun' component={Noun} />
           <Route path='/answer' component={Answer} />
         </div>
+      </div>
+
+      <div className="mx-auto flex justify-center w-full mt-8">
+        <a href="https://github.com/Saunved/clean-insults" target="_blank" rel="noreferrer">
+          <AiFillGithub size="32" />
+        </a>
       </div>
       {/* <Route path='/pool' component={Pool} /> */}
 
